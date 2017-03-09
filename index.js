@@ -257,7 +257,7 @@ function RefreshMetrics() {
             // call again after 1 min (aggressive just to test load)
             q.allSettled(promises).done(() => {
                 console.log(total + " metric rows retrieved.");
-                setTimeout(RefreshMetrics, 10000);
+                setTimeout(RefreshMetrics, 60000);
             });
 
         } else {
