@@ -189,7 +189,7 @@ function RefreshAccounts() {
                     } else {
                         console.log(oldest.length + " storage accounts were refreshed.");
                     }
-                    setTimeout(RefreshAccounts, (initializing) ? 30000 : 600000);
+                    setTimeout(RefreshAccounts, (initializing) ? 60000 : 600000);
 
                 });
 
