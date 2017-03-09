@@ -7,7 +7,7 @@ How do I get Azure Storage metrics (both Classic and ARM) with only READER right
 It turns out there is a Microsoft.Insights endpoint for an older API version that generates readonly SAS tokens specifically for the metrics tables:
 https://management.azure.com/subscriptions/%7bsubscription-id%7d/resourceGroups/%7bresource-group-name%7d/providers/Microsoft.Storage/storageAccounts/%7bstorage-account-name%7d/services/table/providers/microsoft.insights/metricDefinitions?api-version=2015-07-01
 
-** THIS IS A HACK UNTIL THE AZURE MONITOR API SUPPORTS STORAGE LATER THIS YEAR, THIS IS NOT SUPPORTED **
+**THIS IS A HACK UNTIL THE AZURE MONITOR API SUPPORTS STORAGE LATER THIS YEAR, THIS IS NOT SUPPORTED**
 
 Then the problem is that calls to /metricDefinitions is throttled to 100 / 5 min (in practise I saw some variation in this, but it is a tight limit regardless).
 
