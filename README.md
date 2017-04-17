@@ -18,4 +18,11 @@ Here’s how it works, every so often it:
 3. Get metrics for everything that has a definition
 
 ## Configuration
-This solution expects a Azure AD Web App that has been granted READER rights on the subscription. 
+
+* Create a Azure AD Web App and grant it READER rights on the subscription.
+* Rename the config/sample.default.json to config/default.json.
+* Put all the connectivity information into the config/default.json file.
+
+## Execution
+
+* node index.js
