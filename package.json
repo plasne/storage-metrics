@@ -1,0 +1,28 @@
+{
+  "name": "storage-metrics",
+  "version": "1.0.0",
+  "description": "## The Problem How do I get Azure Storage metrics (both Classic and ARM) with only READER rights on the subscription.",
+  "main": "index.js",
+  "dependencies": {
+    "adal-node": "^0.1.22",
+    "azure-storage": "^2.1.0",
+    "config": "^1.25.1",
+    "moment": "^2.17.1",
+    "q": "^1.4.1",
+    "request": "^2.80.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plasne/storage-metrics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plasne/storage-metrics/issues"
+  },
+  "homepage": "https://github.com/plasne/storage-metrics#readme"
+}
